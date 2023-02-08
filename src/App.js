@@ -5,8 +5,8 @@ import React, {useState} from "react";
 function App() {
 
   const [weight, setWeight] = useState(0);
-  const [bottles, setBottles] = useState(0);
-  const [time, setTime] = useState(0);
+  const [bottles, setBottles] = useState(1);
+  const [time, setTime] = useState(1);
   const [gender, setGender] = useState("male");
   const [result, setResult] = useState(0);
 
@@ -47,12 +47,32 @@ function calculate(e) {
 
       <div>
         <label htmlFor="">Pullot</label>
-        <input type="number" class="textrow" step="1" value={bottles} onChange={e => setBottles(e.target.value)} />
+        <select name="bottles" id="bottles" class="dropdown" onChange={e => setBottles(e.target.value)}>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+        </select>
       </div>
 
       <div>
         <label htmlFor="">Aika</label>
-        <input type="number" class="textrow" step="1" value={time} onChange={e => setTime(e.target.value)} />
+        <select name="time" id="time" class="dropdown" onChange={e => setTime(e.target.value)}>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+        </select>
       </div>
 
       <div>
