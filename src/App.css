@@ -40,10 +40,11 @@
 body {
   background-color: pink;
   text-align: center;
-  line-height: 25px;
-  font-size: 14pt;
+  line-height: 30px;
+  font-size: 15px;
 }
 
 .textrow {
   margin-left: 15px;
+  margin-right: 15px;
 }
